@@ -160,9 +160,9 @@ export default function MessagesPage() {
                     >
                       <div className="max-w-[78%]">
                         <div
-                          className={`rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
+                          className={`rounded-2xl px-4 py-2.5 text-sm leading-relaxed shadow-sm ${
                             msg.from === "me"
-                              ? "rounded-br-sm bg-forest text-white"
+                              ? "rounded-br-sm border border-emerald/40 bg-gradient-to-br from-pale to-emerald/25 text-ink"
                               : "rounded-bl-sm border border-border bg-white text-ink"
                           }`}
                         >
