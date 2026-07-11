@@ -1,0 +1,106 @@
+import type { FounderMatch } from "@/types";
+
+export const dummyMatches: FounderMatch[] = [
+  {
+    id: "anand-krishnan",
+    name: "Anand Krishnan",
+    initials: "AK",
+    avatarColor: "bg-blue-500",
+    location: "Bangalore",
+    archetype: "Builder",
+    archetypeDetail: "Backend + ML",
+    tier: "Founding 500",
+    fitScore: 93,
+    fitLabel: "Strong fit",
+    summary:
+      "Building fraud-detection infrastructure for Indian fintechs. Wants to join a clear idea as a technical cofounder. Full-time, ready now.",
+    summaryHighlight: "Wants to join a clear idea",
+    tags: ["Backend", "AI/ML", "Fintech"],
+    signals: {
+      founderType: ["High Conviction", "Ship & Iterate", "Straight Talker"],
+      riskAppetite: { code: "HC", label: "High conviction" },
+      decisionSpeed: { code: "SI", label: "Fast, iterative" },
+      communicationStyle: { code: "ST", label: "Direct" },
+      ideaCommitment: "Open to evolving",
+      workingCommitment: { code: "CB", label: "Full-time, ready now" },
+    },
+    openingQuestion:
+      "Anand ships fast and decides quickly — ask how he handles disagreement when a call needs to be made before everyone's aligned.",
+  },
+  {
+    id: "priya-menon",
+    name: "Priya Menon",
+    initials: "PM",
+    avatarColor: "bg-orange-500",
+    location: "Mumbai",
+    archetype: "Storyteller",
+    archetypeDetail: "Brand + Content",
+    tier: "Verified",
+    fitScore: 87,
+    fitLabel: "Good fit",
+    summary:
+      "Ex-D2C brand lead. Has a clear idea in sustainable consumer goods — needs a technical cofounder who values brand. Full-time, ready in 3 months.",
+    summaryHighlight: "Has a clear idea",
+    tags: ["Brand", "Content", "D2C"],
+    signals: {
+      founderType: ["Firm Vision", "Deliberate", "Diplomatic"],
+      riskAppetite: { code: "BL", label: "Balanced" },
+      decisionSpeed: { code: "DL", label: "Deliberate" },
+      communicationStyle: { code: "DP", label: "Diplomatic" },
+      ideaCommitment: "Firm on the idea",
+      workingCommitment: { code: "CB", label: "Full-time, ready in 3 months" },
+    },
+    openingQuestion:
+      "Priya is firm on her idea direction — ask how much latitude she'd give a technical cofounder to shape the product itself.",
+  },
+  {
+    id: "vikram-khanna",
+    name: "Vikram Khanna",
+    initials: "VK",
+    avatarColor: "bg-emerald-600",
+    location: "Delhi",
+    archetype: "Operator",
+    archetypeDetail: "Finance + Strategy",
+    tier: "Founding 500",
+    fitScore: 81,
+    fitLabel: "Good fit",
+    summary:
+      "Former VC analyst turned operator. Looking for a builder to pair with on a fintech idea already in motion. Full-time, ready now.",
+    tags: ["Finance", "Strategy", "Fintech"],
+    signals: {
+      founderType: ["Balanced", "Deliberate", "Diplomatic"],
+      riskAppetite: { code: "BL", label: "Balanced" },
+      decisionSpeed: { code: "DL", label: "Deliberate" },
+      communicationStyle: { code: "DP", label: "Diplomatic" },
+      ideaCommitment: "Firm on the idea",
+      workingCommitment: { code: "CB", label: "Full-time, ready now" },
+    },
+    openingQuestion:
+      "Vikram moves deliberately and likes structure — ask how he wants major decisions documented and revisited.",
+  },
+  {
+    id: "sneha-nair",
+    name: "Sneha Nair",
+    initials: "SN",
+    avatarColor: "bg-purple-500",
+    location: "Pune",
+    archetype: "Builder",
+    archetypeDetail: "Frontend + Product",
+    tier: "Verified",
+    fitScore: 78,
+    fitLabel: "Possible fit",
+    summary:
+      "Product-minded frontend engineer. Open to exploring ideas with the right cofounder. Full-time, ready now.",
+    tags: ["Frontend", "Product", "Design"],
+    signals: {
+      founderType: ["High Conviction", "Ship & Iterate", "Direct"],
+      riskAppetite: { code: "HC", label: "High conviction" },
+      decisionSpeed: { code: "SI", label: "Fast, iterative" },
+      communicationStyle: { code: "ST", label: "Direct" },
+      ideaCommitment: "No idea yet",
+      workingCommitment: { code: "CB", label: "Full-time, ready now" },
+    },
+    openingQuestion:
+      "Sneha has no fixed idea yet — ask what problem space excites her most before pitching a direction.",
+  },
+];

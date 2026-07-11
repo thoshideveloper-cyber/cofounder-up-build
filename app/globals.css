@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --forest: #065F46;
+  --forest-light: #047857;
+  --emerald: #34D399;
+  --ink: #0F172A;
+  --slate: #64748B;
+  --slate-light: #94A3B8;
+  --warm: #F7F7F5;
+  --pale: #ECFDF5;
+  --border: #E5E7EB;
+  --border-soft: #F1F3F5;
+  --white: #FFFFFF;
+  --page-bg: #EAECEF;
+}
+
+@theme inline {
+  --color-forest: var(--forest);
+  --color-forest-light: var(--forest-light);
+  --color-emerald: var(--emerald);
+  --color-ink: var(--ink);
+  --color-slate: var(--slate);
+  --color-slate-light: var(--slate-light);
+  --color-warm: var(--warm);
+  --color-pale: var(--pale);
+  --color-border: var(--border);
+  --color-border-soft: var(--border-soft);
+  --color-page-bg: var(--page-bg);
+}
+
+body {
+  background: var(--page-bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Gentle single entrance on page load — one quiet moment, not scattered motion */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.reveal {
+  animation: rise 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    animation: none;
+  }
+}
