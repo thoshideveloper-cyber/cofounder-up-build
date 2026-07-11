@@ -58,11 +58,11 @@ export function MatchDetailDrawer({ match, onClose }: MatchDetailDrawerProps) {
         type="button"
         aria-label="Close founder fit signals"
         onClick={onClose}
-        className="absolute inset-0 bg-ink/40"
+        className="animate-fade absolute inset-0 bg-ink/40"
       />
 
       {/* Drawer panel */}
-      <div className="relative flex h-full w-full max-w-2xl flex-col overflow-y-auto bg-warm shadow-xl animate-in slide-in-from-right">
+      <div className="animate-drawer relative flex h-full w-full max-w-2xl flex-col overflow-y-auto bg-warm shadow-xl">
         <div className="flex items-start justify-between border-b border-border bg-white px-6 py-5">
           <div>
             <p className="text-xs font-semibold uppercase tracking-wide text-forest">

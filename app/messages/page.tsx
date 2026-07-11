@@ -41,7 +41,7 @@ export default function MessagesPage() {
   }
 
   return (
-    <div className="h-[calc(100vh-61px)] min-h-[520px] bg-page-bg">
+    <div className="h-[calc(100vh-69px)] min-h-[520px] bg-page-bg">
       <div className="reveal mx-auto flex h-full max-w-6xl flex-col px-6 py-6">
         <div className="flex flex-1 overflow-hidden rounded-xl border border-border bg-white shadow-sm">
           {/* Conversation list */}

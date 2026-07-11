@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Bell } from "lucide-react";
 import { AccountMenu } from "./AccountMenu";
+import { NotificationsMenu } from "./NotificationsMenu";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -18,12 +18,16 @@ export function TopNav() {
   return (
     <header className="border-b border-border bg-white">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
-        <div className="flex items-center gap-2">
+        <Link
+          href="/"
+          aria-label="CofounderUp home"
+          className="flex items-center gap-2 rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest"
+        >
           <span className="flex h-8 w-8 items-center justify-center rounded-md bg-forest text-sm font-bold text-white">
             CU
           </span>
           <span className="text-base font-semibold text-ink">CofounderUp</span>
-        </div>
+        </Link>
 
         <nav className="flex items-center gap-8">
           {NAV_LINKS.map((link) => {
@@ -44,15 +48,8 @@ export function TopNav() {
           })}
         </nav>
 
-        <div className="flex items-center gap-4">
-          <button
-            type="button"
-            aria-label="Notifications"
-            className="relative text-slate hover:text-ink"
-          >
-            <Bell className="h-5 w-5" />
-            <span className="absolute -right-0.5 -top-0.5 h-2 w-2 rounded-full bg-forest" />
-          </button>
+        <div className="flex items-center gap-3">
+          <NotificationsMenu />
           <AccountMenu />
         </div>
       </div>
